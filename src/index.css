@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #07080f;
+  --black-soft: #0d0f1a;
+  --card: #111320;
+  --white: #f4f5fb;
+  --muted: rgba(244, 245, 251, 0.62);
+  --muted-2: rgba(244, 245, 251, 0.38);
+  --accent: #8b5cf6;
+  --accent-soft: rgba(139, 92, 246, 0.16);
+  --border: rgba(255, 255, 255, 0.08);
+
+  --ff-display: "Bebas Neue", sans-serif;
+  --ff-serif: "Playfair Display", serif;
+  --ff-body: "DM Sans", sans-serif;
+
+  --container: 1180px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--black);
+  color: var(--white);
+  font-family: var(--ff-body);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}
+
+.section-shell {
+  width: min(var(--container), calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.section-label {
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.45em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.section-title {
+  font-family: var(--ff-display);
+  font-size: clamp(44px, 7vw, 88px);
+  line-height: 0.95;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 768px) {
+  .section-shell {
+    width: min(100% - 36px, var(--container));
+  }
+}
