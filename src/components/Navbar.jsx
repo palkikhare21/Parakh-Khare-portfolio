@@ -1,23 +1,17 @@
-import "./style/Navbar.css";
+import "../styles/navbar.css";
 
-export default function Navbar() {
+
+const Navbar = () => {
   return (
-    <nav>
-      <a className="nav-logo" href="#">
-        AM
-      </a>
+    
 
-      <ul className="nav-links">
-        <li><a href="#works">Work</a></li>
-        <li><a href="#logos">Logos</a></li>
-        <li><a href="#project-work">Gallery</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <nav className="nav-links">
+       nav
 
-      <a className="nav-cta" href="#contact">
-        Let's Talk
-      </a>
-    </nav>
+      </nav>
+
+     
   );
 }
+
+export default Navbar;

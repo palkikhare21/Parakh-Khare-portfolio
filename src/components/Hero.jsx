@@ -1,53 +1,37 @@
-import "./style/Hero.css";
+import React from "react";
+import "../styles/hero.css";
 
 
-export default function Hero() {
+const Hero = () => {
   return (
-    <section className="hero">
-      <div className="hero-bg"></div>
-      <div className="hero-grid-lines"></div>
-      <div className="hero-number">01</div>
+    <section className="hero" id="hero">
+      <div classname="hero-top">
+        <p classname="hero-subtitle">
+ Graphic Designer
+        </p>
+       
+      </div>
+      <h1>Crafting
+        <br />
+        Memorable
+<br />
+Brands.
+      </h1>
+       <div className="hero-info">
 
-      <div style={{ position: "relative", zIndex: 2 }}>
-        <div className="hero-tag">
-          Graphic Designer & Brand Strategist — 2026
+          <p>Visual Identity</p>
+          <p>Logo Design</p>
+          <p>Packaging</p>
+          <p>Social Media</p>
+
         </div>
+        
 
-        <h1 className="hero-title">
-          <span>CRAFTING</span>
-          <span className="italic">Visual</span>
-          <span>STORIES</span>
-        </h1>
-
-        <div className="hero-bottom">
-          <p className="hero-desc">
-            Brand identities, typographic systems, and visual narratives that
-            leave a lasting impression. Available for freelance worldwide.
-          </p>
-
-          <div className="hero-stats">
-            <div className="stat">
-              <span className="stat-num">8+</span>
-              <span className="stat-label">Years Exp</span>
-            </div>
-
-            <div className="stat">
-              <span className="stat-num">120+</span>
-              <span className="stat-label">Projects</span>
-            </div>
-
-            <div className="stat">
-              <span className="stat-num">40+</span>
-              <span className="stat-label">Clients</span>
-            </div>
-          </div>
-
-          <div className="hero-scroll">
-            <span className="scroll-line"></span>
-            Scroll to explore
-          </div>
-        </div>
+      <div className="scroll-text">
+        Scroll to Explore ↓
       </div>
     </section>
   );
 }
+
+export default Hero;
