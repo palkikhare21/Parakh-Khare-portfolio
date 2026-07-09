@@ -1,0 +1,100 @@
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 900;
+
+    padding: 12px 18px;
+background: rgba(18,18,18,.55);
+
+backdrop-filter: blur(18px);
+
+border:1px solid rgba(255,255,255,.08);
+    /* background: rgba(30,30,30,.9); */
+    /* backdrop-filter: blur(20px); */
+    /* -webkit-backdrop-filter: blur(20px); */
+
+    /* border: 1px solid rgba(255,255,255,0.12); */
+    /* border-radius: 30px; */
+}
+.navbar ul{
+
+    display:flex;
+
+    /* flex-direction:column; */
+align-items: center;
+    gap:10px;
+
+}
+.navbar a {
+    position: relative;
+
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
+.label {
+    position: absolute;
+
+    top: 58px;
+
+    opacity: 0;
+
+    transform: translateY(10px);
+
+    transition: .3s;
+
+    font-size: 12px;
+
+    white-space: nowrap;
+}
+.navbar a:hover .label {
+    opacity: 1;
+    transform: translateY(0);
+}
+.icon {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: .35s ease;
+
+    font-size: 22px;
+}
+.navbar a:hover .icon{
+
+     background:#FF5A1F;
+
+    color:white;
+
+    transform:translateY(-5px) scale(1.12);
+
+}
+.logo{
+
+    margin-bottom:40px;
+
+    font-size:1.5rem;
+
+    font-weight:bold;
+
+    color:#ff5a1f;
+
+}

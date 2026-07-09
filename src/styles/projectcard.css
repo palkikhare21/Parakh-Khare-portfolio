@@ -1,0 +1,104 @@
+.project-card{
+
+    position:relative;
+
+    background:#1b1b1b;
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    transform:rotate(-3deg);
+
+    transition:.6s;
+
+    cursor:pointer;
+
+}
+.project-card:hover{
+
+    transform:rotate(0deg) scale(1.02);
+
+}
+.project-image{
+
+    height:650px;
+
+    overflow:hidden;
+
+}
+.project-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.7s;
+
+}
+.project-card:hover img{
+
+    transform:scale(1.08);
+
+}
+.project-content{
+
+    padding:50px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:end;
+
+}
+.project-number{
+
+    position:absolute;
+
+    top:40px;
+
+    left:40px;
+
+    font-size:4rem;
+
+    font-weight:700;
+
+    color:white;
+
+    z-index:2;
+
+}
+.project-content h2{
+
+    font-size:3rem;
+
+    margin:15px 0;
+
+}
+.project-description{
+
+    max-width:500px;
+
+    color:#b8b8b8;
+
+}
+.project-content button{
+
+    border:none;
+
+    padding:18px 35px;
+
+    border-radius:40px;
+
+    background:#ff5a1f;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}

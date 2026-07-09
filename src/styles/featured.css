@@ -1,0 +1,43 @@
+.featured-work{
+
+    min-height:100vh;
+
+    padding:120px 90px;
+
+}
+
+.featured-title{
+
+    margin-bottom:80px;
+
+}
+
+.featured-title p{
+
+    color:#ff5a1f;
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+    margin-bottom:15px;
+
+}
+
+.featured-title h1{
+
+    font-size:6rem;
+
+    line-height:.9;
+
+}
+
+.projects{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:120px;
+
+}

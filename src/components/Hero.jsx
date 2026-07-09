@@ -1,37 +1,38 @@
 import React from "react";
 import "../styles/hero.css";
 
-
 const Hero = () => {
   return (
     <section className="hero" id="hero">
-      <div classname="hero-top">
-        <p classname="hero-subtitle">
- Graphic Designer
+      <div className="hero-top">
+        <p className="hero-subtitle">
+          GRAPHIC DESIGNER
+          <br />
+          <br />
+          Creative Branding Studio
         </p>
-       
       </div>
-      <h1>Crafting
-        <br />
-        Memorable
-<br />
-Brands.
-      </h1>
-       <div className="hero-info">
 
-          <p>Visual Identity</p>
-          <p>Logo Design</p>
-          <p>Packaging</p>
-          <p>Social Media</p>
+      <div className="hero-content">
+        <h1>
+          Crafting
+          <br />
+          Memorable
+          <br />
+          <span>Brands</span>
+        </h1>
 
+        <div className="hero-info">
+          <p>01 Visual Identity</p>
+          <p>02 Logo Design</p>
+          <p>03 Packaging</p>
+          <p>04 Social Media</p>
         </div>
-        
-
-      <div className="scroll-text">
-        Scroll to Explore ↓
       </div>
+
+      <div className="scroll-text">Scroll to Explore ↓</div>
     </section>
   );
-}
+};
 
 export default Hero;
