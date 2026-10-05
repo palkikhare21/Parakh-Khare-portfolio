@@ -5,7 +5,7 @@ import Intro from "../components/Intro";
 import FeaturedWork from "../sections/FeaturedWork";
 import About from "../sections/About";
 import Logofolio from "../sections/Logofolio";
-import VisualIdentity from "../sections/VisualIdentity";
+import VisualIdentity from "../sections/VisualIdentity/VisualIdentity";
 import Branding from "../sections/Branding";
 import SocialMedia from "../sections/SocialMedia";
 import Packaging from "../sections/Packaging";

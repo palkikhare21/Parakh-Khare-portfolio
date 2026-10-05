@@ -1,0 +1,49 @@
+.packaging{
+padding:120px 8%;
+background:#000;
+color:#fff;
+}
+
+.package-row{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:70px;
+align-items:center;
+margin-bottom:120px;
+}
+
+.reverse img{
+order:2;
+}
+
+.package-row img{
+width:100%;
+border-radius:25px;
+}
+
+.package-row h3{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.package-row p{
+font-size:18px;
+color:#bfbfbf;
+line-height:1.8;
+}
+
+@media(max-width:900px){
+
+.package-row{
+
+grid-template-columns:1fr;
+
+}
+
+.reverse img{
+
+order:unset;
+
+}
+
+}

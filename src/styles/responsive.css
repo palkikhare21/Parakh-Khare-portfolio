@@ -1,0 +1,104 @@
+@media (max-width: 1100px) {
+  .hero-grid,
+  .featured-title,
+  .about-header,
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-showcase {
+    min-height: 520px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    top: auto;
+    bottom: 18px;
+    max-width: calc(100vw - 24px);
+    overflow-x: auto;
+  }
+
+  .navbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .navbar a {
+    width: 42px;
+    height: 42px;
+  }
+
+  .icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .label {
+    display: none;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 34px;
+    padding-bottom: 110px;
+  }
+
+  .hero h1 {
+    font-size: clamp(3rem, 15vw, 4.9rem);
+  }
+
+  .hero-showcase {
+    min-height: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .showcase-card-large {
+    aspect-ratio: 4 / 5;
+  }
+
+  .showcase-stack {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .showcase-card-small {
+    aspect-ratio: 1;
+  }
+
+  .showcase-metric {
+    grid-column: 1 / -1;
+  }
+
+  .featured-work,
+  .about,
+  .contact {
+    padding-top: 78px;
+    padding-bottom: 78px;
+  }
+
+  .project-card {
+    min-height: 520px;
+  }
+
+  .project-reveal {
+    position: absolute;
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .project-basic {
+    display: none;
+  }
+
+  .project-reveal dl {
+    grid-template-columns: 1fr;
+  }
+
+  .contact {
+    padding-bottom: 118px;
+  }
+}

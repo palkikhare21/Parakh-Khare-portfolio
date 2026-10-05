@@ -1,0 +1,25 @@
+.social{
+padding:120px 8%;
+background:#050505;
+}
+
+.social-grid{
+columns:3 280px;
+column-gap:20px;
+}
+
+.social-card{
+margin-bottom:20px;
+overflow:hidden;
+border-radius:18px;
+}
+
+.social-card img{
+width:100%;
+display:block;
+transition:.4s;
+}
+
+.social-card:hover img{
+transform:scale(1.05);
+}

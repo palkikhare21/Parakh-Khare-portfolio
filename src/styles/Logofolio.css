@@ -1,0 +1,223 @@
+.logofolio {
+    width: 100%;
+    min-height: 100vh;
+    background: #000;
+    color: #fff;
+    padding: 120px 8%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Orange glow */
+
+.logofolio::before{
+    content:"";
+    position:absolute;
+    left:-250px;
+    bottom:-250px;
+    width:600px;
+    height:600px;
+    background:radial-gradient(circle,
+    rgba(255,90,31,.25),
+    transparent 70%);
+    pointer-events:none;
+}
+
+/* top */
+
+.section-top{
+
+    display:flex;
+    align-items:flex-start;
+    gap:35px;
+
+    margin-bottom:70px;
+
+}
+
+.section-number{
+
+    font-size:90px;
+    font-weight:700;
+
+    color:#ff5a1f;
+
+    line-height:1;
+
+}
+
+.section-top h2{
+
+    font-size:60px;
+
+    font-weight:500;
+
+    color:#fff;
+
+    margin-bottom:10px;
+
+}
+
+.section-top p{
+
+    color:#b5b5b5;
+
+    font-size:20px;
+
+}
+
+/* grid */
+
+.logo-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+/* card */
+
+.logo-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+    position:relative;
+
+}
+
+.logo-card img{
+
+    width:100%;
+
+    display:block;
+
+    transition:.5s;
+
+}
+
+.logo-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 50px rgba(255,90,31,.25);
+
+}
+
+.logo-card:hover img{
+
+    transform:scale(1.06);
+
+}
+
+.logo-card::after{
+
+    content:"View Project";
+
+    position:absolute;
+
+    left:50%;
+
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    background:#ff5a1f;
+
+    color:#fff;
+
+    padding:12px 28px;
+
+    border-radius:40px;
+
+    opacity:0;
+
+    transition:.4s;
+
+    font-weight:600;
+
+}
+
+.logo-card:hover::after{
+
+    opacity:1;
+
+}
+
+/* Tablet */
+
+@media(max-width:992px){
+
+.logo-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.section-top h2{
+
+font-size:45px;
+
+}
+
+.section-number{
+
+font-size:70px;
+
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.logofolio{
+
+padding:80px 25px;
+
+}
+
+.logo-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.section-top{
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+.section-top h2{
+
+font-size:38px;
+
+}
+
+.section-number{
+
+font-size:55px;
+
+}
+
+.section-top p{
+
+font-size:16px;
+
+}
+
+}

@@ -1,77 +1,79 @@
-.about{
-
-    min-height:100vh;
-
-    padding:120px 90px;
-
+.about {
+  padding: 118px clamp(20px, 6vw, 88px);
+  background: var(--paper);
+  color: var(--night);
 }
-.about-header{
 
-    margin-bottom:80px;
-
+.about-header {
+  display: grid;
+  grid-template-columns: 0.36fr 1fr;
+  gap: 40px;
+  margin-bottom: 54px;
 }
-.about-header p{
 
-    color:#ff5a1f;
-
-    text-transform:uppercase;
-
-    letter-spacing:3px;
-
-    margin-bottom:15px;
-
+.about-header p {
+  color: var(--orange);
+  text-transform: uppercase;
+  font-weight: 900;
 }
-.about-header h2{
 
-    font-size:clamp(3rem,7vw,6rem);
-
-    line-height:.9;
-
-    max-width:700px;
-
+.about-header h2 {
+  max-width: 1040px;
+  font-size: clamp(2.5rem, 6vw, 6.2rem);
+  line-height: 0.95;
+  font-weight: 900;
 }
-.about-content{
 
-    display:grid;
-
-    grid-template-columns:1fr 1.5fr;
-
-    gap:120px;
-
-    align-items:start;
-
+.about-content {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 26px;
 }
-.about-stats{
 
-    display:flex;
-
-    flex-direction:column;
-
-    gap:50px;
-
+.about-stats {
+  display: grid;
+  gap: 14px;
 }
-.stat h3{
 
-    font-size:4rem;
-
-    color:#ff5a1f;
-
+.stat {
+  border-top: 1px solid rgba(9, 9, 8, 0.18);
+  padding: 22px 0;
 }
-.stat p{
 
-    color:#999;
-
-    margin-top:10px;
-
+.stat h3 {
+  font-size: clamp(1.6rem, 3vw, 2.6rem);
 }
-.about-text p{
 
-    font-size:1.6rem;
+.stat p {
+  max-width: 420px;
+  margin-top: 8px;
+  color: #59524d;
+  line-height: 1.55;
+}
 
-    line-height:1.8;
+.about-text {
+  border-radius: 8px;
+  padding: clamp(28px, 5vw, 58px);
+  background: var(--night);
+  color: var(--ink);
+}
 
-    color:#d9d9d9;
+.about-text p {
+  font-size: clamp(1.24rem, 2.5vw, 2.1rem);
+  line-height: 1.45;
+}
 
-    max-width:700px;
+.tool-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 34px;
+}
 
+.tool-list span {
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  padding: 10px 14px;
+  color: var(--muted);
+  font-weight: 700;
 }

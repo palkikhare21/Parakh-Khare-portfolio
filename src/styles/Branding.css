@@ -1,0 +1,58 @@
+.branding{
+padding:120px 8%;
+background:#000;
+color:#fff;
+}
+
+.branding-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+.branding-card{
+position:relative;
+overflow:hidden;
+border-radius:20px;
+cursor:pointer;
+}
+
+.branding-card img{
+width:100%;
+display:block;
+transition:.5s;
+}
+
+.branding-overlay{
+position:absolute;
+inset:0;
+background:rgba(0,0,0,.75);
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+opacity:0;
+transition:.4s;
+}
+
+.branding-card:hover img{
+transform:scale(1.08);
+}
+
+.branding-card:hover .branding-overlay{
+opacity:1;
+}
+
+.branding-overlay h3{
+margin-bottom:20px;
+font-size:28px;
+}
+
+.branding-overlay button{
+padding:12px 28px;
+background:#ff5a1f;
+border:none;
+color:#fff;
+cursor:pointer;
+border-radius:30px;
+}

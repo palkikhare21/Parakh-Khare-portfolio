@@ -3,54 +3,46 @@ import "../styles/about.css";
 const About = () => {
   return (
     <section className="about" id="about">
-
       <div className="about-header">
-
-        <p>About</p>
-
+        <p>About the Designer</p>
         <h2>
-          More than just
-          <br />
-          beautiful designs.
+          Strategy-first visuals for brands, screens and campaigns.
         </h2>
-
       </div>
 
       <div className="about-content">
-
         <div className="about-stats">
-
           <div className="stat">
-            <h3>05+</h3>
-            <p>Years Experience</p>
+            <h3>Branding</h3>
+            <p>Identity systems, logos, stationery and mockups.</p>
           </div>
-
           <div className="stat">
-            <h3>120+</h3>
-            <p>Projects</p>
+            <h3>UI UX</h3>
+            <p>App screens, web layouts, user flows and components.</p>
           </div>
-
           <div className="stat">
-            <h3>40+</h3>
-            <p>Happy Clients</p>
+            <h3>Campaigns</h3>
+            <p>Social creatives, posters, launches and content systems.</p>
           </div>
-
         </div>
 
         <div className="about-text">
-
           <p>
-            I specialize in creating visual identities,
-            logos, packaging and digital experiences that
-            help brands stand out. Every project is built
-            with strategy, creativity and attention to
-            detail, ensuring every design tells a story.
+            Parakh creates visual work that balances taste with practical
+            outcomes: memorable identities, polished digital interfaces and
+            marketing assets that feel consistent across every touchpoint.
           </p>
 
+          <div className="tool-list">
+            <span>Figma</span>
+            <span>Photoshop</span>
+            <span>Illustrator</span>
+            <span>Canva</span>
+            <span>Brand Systems</span>
+            <span>Motion Ready</span>
+          </div>
         </div>
-
       </div>
-
     </section>
   );
 };
