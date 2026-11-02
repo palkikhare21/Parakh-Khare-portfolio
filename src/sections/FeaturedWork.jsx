@@ -2,6 +2,8 @@ import "../styles/featured.css";
 
 import ProjectCard from "../components/ProjectCard";
 
+
+// Selected Projects card sectionnnn ------------------
 const projects = [
   {
     id: "01",

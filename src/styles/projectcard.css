@@ -1,6 +1,6 @@
 .project-card {
   position: relative;
-  min-height: 620px;
+  min-height: 420px;
   border-radius: 8px;
   overflow: hidden;
   background: var(--panel);
@@ -11,6 +11,11 @@
 .project-image,
 .project-image img {
   height: 100%;
+}
+
+.project-image {
+  position: absolute;
+  inset: 0;
 }
 
 .project-image img {
